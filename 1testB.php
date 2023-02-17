@@ -1,4 +1,4 @@
-B.
+
 <?php
 
 // Array1 sebagai sumber data
@@ -26,13 +26,13 @@ function getJumlahPasienByDokter($dokter) {
 
 // Endpoint API untuk mendapatkan informasi jumlah pasien yang ditangani oleh suatu dokter
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    if (isset($_GET['dokter'])) {
+        if (isset($_GET['dokter'])) {
         $dokter = $_GET['dokter'];
         $jumlahPasien = getJumlahPasienByDokter($dokter);
         $result = array(
             'namadokter' => $dokter,
             'jumlahpasien
-
+        
 function getDoctorPatients($doctorName) {
     $result = array();
     $totalPatients = 0;
